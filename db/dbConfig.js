@@ -4,7 +4,7 @@ const dbConnection = mysql2.createPool({
   // socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
   user: process.env.USERS,
   database: process.env.DATABASE,
-  host: "localhost",
+  host:  process.env.HOST,
   password: process.env.PASSWORD,
   connectionLimit: 10,
 });
